@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+:root{
+    --color0:white;
+    --color1:black;
+    --color2:rgb(37, 37, 37);;
+    --color3:#2e2e2e;
+    --color4:gray;
+    --color5:lightgray;
+    --color6:#fefefe;
+    --color7:#D81E5B;
+    --color8:#009B72;
+    --color9:blue;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+    background-color:var(--color5);
+    
+}

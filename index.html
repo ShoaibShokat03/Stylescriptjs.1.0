@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleScriptjs</title>
+
+    <link rel="stylesheet" href="./assets/css/root.style.css">
+    <link rel="stylesheet" href="./assets/stylescriptjs/stylescript.css">
+
+    <script src="https://kit.fontawesome.com/feb2b5f159.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ======================= Page Loader ======================= -->
+    <div class="page-loader" id="page-loader">
+        <div class="loader">
+            <img src="./assets/images/defualt/no-bg-loader-icon.png" alt="">
+        </div>
+    </div>
+    <!-- ====================== End Page Loader ====================== -->
+
+    <!-- ========================= Page Progress ========================= -->
+    <div class="page-progress-bar" id="page-progress">
+        <div class="page-progress"></div>
+    </div>
+    <!-- ========================= End Page Progress ========================= -->
+
+
+    <!-- ============================ Your Website Content ============================ -->
+
+    <div class="header-box width:100% position:fixed top:0 left:0 z-index:109">
+        <header class="width:100% height:80px ww600px:height:60px background-color:var(--color0) 
+        display:flex justify-content:space-between padding:10px align-items:center">
+            <div class="brand">
+                <h1 class="gill"><a href="./" class="text-decoration:none gill color:var(--color7)">Blog</a></h1>
+            </div>
+            <div class="search-box flex content-left">
+                <form action="searc" method="get" class="width:310px background-color:white flex border:1px/solid/var(--color7)
+                padding-top:2px padding-bottom:2px padding-left:30px padding-right:10px border-radius:30px">
+                    <input type="search" name="Query" placeholder="Search Query.."
+                        class="width:100% color:var(--color4) font-size:100% padding:5px outline:none border:none">
+                    <button type="submit" class="width:50px background-color:var(--color0) color:var(--color7) border:none outline:none 
+                    border-top-right-radius:30px border-bottom-right-radius:30px cursor:pointer font-size:100%">
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="top-navigation">
+                <nav class="">
+                    <ul class="absolute-center list-style:none">
+                        <li class="margin:2px">
+                            <a href="index.html" class="text-decoration:none color:var(--color7) padding:10px">Home</a>
+                        </li>
+                        <li class="margin:2px">
+                            <a href="about.html" class="text-decoration:none color:var(--color7) padding:10px">About</a>
+                        </li>
+                        <li class="margin:2px">
+                            <a href="contact.html"
+                                class="text-decoration:none color:var(--color7) padding:10px">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- ================================================================================================= -->
+
+    <!-- =============================== Main Content ========================================================= -->
+    <div class="container width:100% min-height:100vh margin-top:80px ww600px:margin-top:60px">
+
+        <div class="slider-and-right-side-bar">
+
+        </div>
+        <!-- =================================== Slider =================================== -->
+        <div class="slider-box width:100% height:auto overflow:hidden">
+            <!-- Slide Images -->
+            <div class="slide-box slide-time-3000 loop-child-10 display-flex">
+                <!-- Slide -->
+                <div class="slide width:100%">
+                    <img src="./assets/images/defualt/1.jpg" alt=""
+                        class="position:relative width:100% height:calc(100vh/-/70px)">
+                    <!-- slide title text -->
+                    <div class="slide-text width:100% position:absolute top:70% left:0 z-index:100 
+                    flex flex-direction:column text-center all-center height:auto padding:5px">
+                        <div class="width-70% ww600px:width:100%">
+                            <h4
+                                class="color:var(--color7) gill bold -webkit-text-stroke:0.5px/var(--color0) font-size:23px">
+                                Title
+                            </h4>
+                            <p class="padding:0px">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iure
+                                dolores maiores optio nisi tempore aliquam at commodi blanditiis? Illum possimus
+                                corporis ducimus pariatur iure perferendis, minima tenetur tempora numquam!</p>
+                            <div class="width:100% padding:10px">
+                                <button
+                                    class="background-color:var(--color7):hover:var(--color8) padding:10px font-size:100% border-radius:5px border:none outline:none">
+                                    <a href="" class="text-decoration:none color:var(--color0)">Explore</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Slide -->
+
+            </div>
+            <!-- End Slide Images -->
+
+            <!-- Slider Next Preve Button -->
+            <div class="slider-next-preve-btn width:100% height:50px background-color:transparent 
+            position:absolute top:50vh left:0 flex content-space-between align-center">
+                <button id="slide-preve-btn" type="button" class="height:100% padding:10px font-size:100% background-color:var(--color7) color:var(--color0) cursor:pointer 
+                border:none outline:none border-radius:0px/5px/5px/0px"><i
+                        class="fa-solid fa-arrow-left "></i></button>
+                <button id="slide-next-btn" type="button" class="height:100% padding:10px font-size:100% background-color:var(--color7) color:var(--color0) cursor:pointer 
+                border:none outline:none border-radius:5px/0px/0px/5px"><i
+                        class="fa-solid fa-arrow-right "></i></button>
+            </div>
+        </div>
+        <!-- ======================================== End Slider ======================================== -->
+
+
+        <!--=========================== Start Content=========================== -->
+
+        <div
+            class="left-right-boxes background-color:var(--color0) width:100% min-height:300px flex flex-row padding:15px">
+            <div class="left-box width:100% padding:5px">
+                <div class="content background:white width:100%">
+                    <!-- Blog Heading1 -->
+                    <div class="blog-heading1 gill flex content-left align-center">
+                        <h2>Top Posts</h2>
+                    </div>
+                    <!-- End Blog Heading1 -->
+                    <!-- Tops Posts -->
+                    <div
+                        class="top-posts-box loop-child-15 width:100% grid grid-col-4 grid-gap-15px padding:5px padding-bottom:15px">
+                        <!-- Top Post -->
+                        <div class="top-post border-radius:2px">
+                            <a href="">
+                                <img src="./assets/images/defualt/3.jpg" alt="Top Post"
+                                    class="width:100% height:150px transition:all/0.4s/ease-in-out border-radius:5px">
+                            </a>
+                            <div class="post-content flex">
+                                <div class="padding:5px">
+                                    <a href="">
+                                        <img src="./assets/images/defualt/2.jpg" alt="Blogger Image"
+                                            class="width:40px height:40px border-radius:50%">
+                                    </a>
+                                </div>
+                                <div class="width:100% padding:5px">
+                                    <div class="flex content-space-between">
+                                        <div class="">
+                                            <div class="padding-bottom:5px">
+                                                <a href="" class="text-decoration:none color:var(--color3)">
+                                                    <h4 class="bold">Title</h4>
+                                                </a>
+                                            </div>
+                                            <a href="" class="text-decoration:none">
+                                                <small
+                                                    class="font-size:16px color:var(--color4):hover:var(--color1)">Blogger
+                                                    Name</small>
+                                            </a>
+                                        </div>
+                                        <div class="post-modal">
+                                            <button id=""
+                                                class="cursor:pointer padding:0px font-size:100% background-color:transparent border:none outline:none">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </button>
+                                            <div class="post-inner-modal">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="width:100% flex content-left color:var(--color4) align-center padding-top:5px">
+                                        <small>
+                                            <span>1k</span>&nbsp;<span>Views</span>
+                                        </small>
+                                        <span class="padding:5px">
+                                            <div
+                                                class="dot width:5px height:5px border-radius:50% background-color:var(--color2)">
+                                            </div>
+                                        </span>
+                                        <small>
+                                            <span>1 Minutes</span>&nbsp;<span>ago</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Top Post -->
+
+                    </div>
+                    <!-- End Top Posts -->
+                </div>
+            </div>
+            <div class="right-box width:300px padding:5px">
+                <div class="content width:100% padding:5px background-color:var(--color0)">
+                    <!-- WhatsApp Form -->
+                    <div class="whatsapp-form padding:15px border:1px/solid/var(--color5) border-radius:2px">
+                        <div class="width:100% height:50px all-center font-size:100%">
+                            <h4 class="color:var(--color7) gill">Signup Or Login</h4>
+                        </div>
+                        <form action="" method="post" class="padding:1px grid grid-col-1 grid-gap-10px">
+                            <input type="text" placeholder="WhatsApp Number.."
+                                class="width:100% padding:5px font-size:100% border:1px/solid/var(--color5) outline-color:var(--color7) border-radius:2px">
+                            <input type="password" placeholder="Password.."
+                                class="width:100% padding:5px font-size:100% border:1px/solid/var(--color5) outline-color:var(--color7) border-radius:2px">
+                            <button type="submit" class="width:100% padding:5px font-size:100% background-color:var(--color7):hover:var(--color8) color:var(--color0)
+                            cursor:pointer font-size:100% border:none outline:none border-radius:2px">Send</button>
+                        </form>
+                    </div>
+                    <!-- End WhatsApp Form -->
+                </div>
+            </div>
+        </div>
+
+        <!--=========================== End Content=========================== -->
+
+    </div>
+    <!-- ============================ End Your Website Content ============================ -->
+
+
+
+
+    <!-- ================================================================================================= -->
+
+    <!-- =========================================== Footer =========================================== -->
+    <div class="bottom-footer width:100% height:auto background-color:var(--color0)">
+        <footer>
+            <div class="copyright-box width:100% height:50px flex content-space-between align-center padding:10px 
+            ww600px:flex-direction:column-reverse ww600px:justify-content:center border-top:1px/solid/var(--color5)">
+                <div class="copyright-text ww600px:width:100% flex flex-wrap:wrap text-center all-center">
+                    <p class="color:var(--color4)">
+                        <span>&copy; 2022 </span>
+                        <span><a href="" class="text-decoration-none color:var(--color7)">Blog</a></span>
+                        <span>Powerd By </span>
+                        <span><a href="" class="text-decoration-none color:var(--color7)">www.overshover.com</a></span>
+                    </p>
+                </div>
+                <div class="privacy-policy-and-terms-and-conditions">
+                    <ul class="flex list-style:none">
+                        <li class="margin:2px">
+                            <a href="" class="text-decoration-none color:var(--color7)">Privacy Policy</a>
+                        </li>
+                        <li class="margin:2px">
+                            <a href="" class="text-decoration-none color:var(--color7)">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- =========================================== End Footer =========================================== -->
+
+    <!-- ====================================== JavaScript Files ====================================== -->
+
+    <script src="./assets/jquery/jquery.js"></script>
+    <script src="./assets/stylescriptjs/page_loading.stylescript.js"></script>
+    <script src="./assets/stylescriptjs/stylescript.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
